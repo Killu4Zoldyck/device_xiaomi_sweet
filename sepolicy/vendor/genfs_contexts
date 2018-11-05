@@ -1,2 +1,6 @@
 # Charger
 genfscon sysfs /sys/class/power_supply/battery/input_suspend    u:object_r:vendor_sysfs_battery_supply:s0
+
+# Healthd
+genfscon sysfs /devices/soc/soc:qcom,bcl/power_supply      u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /devices/soc/msm-bcl-20/power_supply        u:object_r:sysfs_batteryinfo:s0
