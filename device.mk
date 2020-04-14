@@ -106,9 +106,6 @@ PRODUCT_PACKAGES += \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet
 
-PRODUCT_PACKAGES += \
-    NotchBarKiller
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -198,7 +195,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     camera.device@3.6-external-impl \
-    camera.device@3.5-impl
+    camera.device@3.5-impl \
+    libmm-qcamera
 
 PRODUCT_PACKAGES += \
     libshim_megvii
@@ -328,5 +326,9 @@ PRODUCT_PACKAGES += \
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
 
 include vendor/xiaomi/sweet/sweet-vendor.mk
