@@ -91,3 +91,7 @@ on property:vendor.usb.mimode=*
 on property:ro.persistent_properties.ready=true
     setprop persist.sys.sf.native_mode 0
     setprop persist.sys.sf.color_saturation 0.8
+    
+    # Report max frequency to unity tasks
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
