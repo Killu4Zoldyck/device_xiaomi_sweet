@@ -163,7 +163,6 @@ vendor/bin/athdiag
 vendor/bin/audioflacapp
 vendor/bin/audioshell_service
 vendor/bin/batteryd
-vendor/bin/batterysecret
 vendor/bin/btconfig
 vendor/bin/cameratest
 vendor/bin/capture_headset.sh
@@ -2325,8 +2324,9 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/ueventd.rc
 
-# Power-off charging daemon
-bin/charger
+# Batterysecret
+vendor/bin/batterysecret
+vendor/etc/init/init.batterysecret.rc
 
 # Camera provider
 vendor/lib/android.hardware.camera.provider@2.4-legacy.so
@@ -2334,3 +2334,6 @@ vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 
 # Alarm
 -product/app/PowerOffAlarm/PowerOffAlarm.apk
+
+# Power-off charging daemon
+bin/charger
