@@ -237,6 +237,10 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor \
     libcodec2_hidl@1.0.vendor
 
+# Prebuilt Google Sounds
+PRODUCT_PACKAGES += \
+    PrebuiltGoogleSounds
+
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service
 
