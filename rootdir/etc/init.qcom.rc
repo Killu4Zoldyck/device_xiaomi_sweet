@@ -1,0 +1,29 @@
+on post-fs-data
+
+service vendor.light-qti /vendor/bin/hw/android.hardware.lights-service.qti
+    class hal
+    user system
+    group system
+    shutdown critical
+    disabled
+    override
+
+service vendor.motor /vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service
+    override
+    disabled
+    
+on late-fs
+    start surfaceflinger
+    start bootanim
+    start vendor.hwcomposer-2-4
+    start vendor.qti.hardware.display.allocator
+
+on post-fs-data
+    # EAS
+    write /proc/sys/kernel/sched_upmigrate 95
+    write /proc/sys/kernel/sched_downmigrate 85
+    
+on boot
+    # SMART CHARGING
+    chown system system /sys/class/power_supply/battery/input_suspend
+    chmod 0660 /sys/class/power_supply/battery/input_suspend 

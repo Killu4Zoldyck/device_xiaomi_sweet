@@ -31,3 +31,6 @@
 /sys/devices/platform/kcal_ctrl.0/kcal_sat                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_val                           u:object_r:sysfs_dm:s0
 /sys/devices/platform/kcal_ctrl.0/kcal_cont                          u:object_r:sysfs_dm:s0
+
+# Smart Charging
+/sys/class/power_supply/battery/input_suspend                                                                               u:object_r:vendor_sysfs_battery_supply:s0
