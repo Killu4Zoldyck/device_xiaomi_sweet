@@ -111,6 +111,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Neverallows
+SELINUX_IGNORE_NEVERALLOWS := true
+
 BOARD_VENDOR_SEPOLICY_DIRS += device/qcom/sepolicy_vndr/generic/vendor/msmsteppe
 BOARD_VENDOR_SEPOLICY_DIRS += device/qcom/sepolicy_vndr/qva/vendor/msmsteppe
 include device/qcom/sepolicy_vndr/SEPolicy.mk
