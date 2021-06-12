@@ -48,6 +48,8 @@ TARGET_KERNEL_CONFIG := sweet_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sweet
 TARGET_KERNEL_ARCH := arm64
 
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/proton-clang2
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
