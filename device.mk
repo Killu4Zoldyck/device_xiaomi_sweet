@@ -116,12 +116,11 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlaySweet \
     DialerOverlaySweet \
     FrameworkResOverlaySweet \
+    NoCutoutOverlay \
+    NotchBarKiller \
     SettingsProviderOverlaySweet \
     SystemUIOverlaySweet \
-    TelephonyOverlaySweet
-
-PRODUCT_PACKAGES += \
-    NotchBarKiller \
+    TelephonyOverlaySweet \
     WifiOverlay \
     SweetinproSettingsProvider \
     SweetinproWifiOverlay
