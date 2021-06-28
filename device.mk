@@ -348,4 +348,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCam
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.vibrator.service \
+    vendor.qti.hardware.vibrator.impl \
+    vibrator.default
+
 include vendor/xiaomi/sweet/sweet-vendor.mk
