@@ -23,6 +23,13 @@ $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=nazunamoe
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_backpressure=1 \
+    persist.sys.sf.disable_blurs=1
+
 # Device identifier. This must come after all inclusions
 DEVICE_MAINTAINER := nazunamoe
 CHERISH_BUILD_TYPE := OFFICIAL
@@ -38,3 +45,4 @@ PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
