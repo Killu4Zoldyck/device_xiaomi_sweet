@@ -20,3 +20,5 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 # Camera
 persist.vendor.camera.facepp.fdenable=0
 
+# Gboard
+ro.com.google.ime.kb_pad_port_b=1
