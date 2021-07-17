@@ -107,9 +107,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DeviceSettings
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/devicesettings/privapp-permissions-devicesettings.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-devicesettings.xml
-
 # Overlays
 PRODUCT_PACKAGES += \
     BluetoothOverlaySweet \
@@ -278,10 +275,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     libclearkeycasplugin \
     libdrmclearkeyplugin
-
-# TouchFeature
-PRODUCT_PACKAGES += \
-    vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
 # Perf
 PRODUCT_PACKAGES += \
