@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlaySweet \
     NoCutoutOverlay \
     NotchBarKiller \
+    SettingsOverlay \
     SettingsProviderOverlaySweet \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet \
