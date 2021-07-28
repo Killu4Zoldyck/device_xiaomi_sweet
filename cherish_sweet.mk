@@ -19,6 +19,7 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common CherishOS stuff
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
+USE_LAWNCHAIR := true
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 PRODUCT_GENERIC_PROPERTIES += \
     ro.cherish.maintainer=nazunamoe
