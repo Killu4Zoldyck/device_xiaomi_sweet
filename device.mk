@@ -120,6 +120,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NotchBarKiller \
     SettingsOverlay \
+    SettingsOverlaySweet \
     SettingsProviderOverlaySweet \
     SystemUIOverlaySweet \
     TelephonyOverlaySweet \
