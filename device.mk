@@ -213,10 +213,6 @@ PRODUCT_PACKAGES += \
     libwfdaac_vendor \
     vendor.display.config@2.0
 
-# FirefoxLite
-PRODUCT_PACKAGES += \
-    FirefoxLite
-
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
