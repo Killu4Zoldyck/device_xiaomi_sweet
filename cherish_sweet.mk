@@ -26,10 +26,10 @@ endif
 
 $(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 PRODUCT_GENERIC_PROPERTIES += \
-    ro.cherish.maintainer=nazunamoe
+    ro.cherish.maintainer=KilluaZoldyck
 
 # Device identifier. This must come after all inclusions
-DEVICE_MAINTAINER := nazunamoe
+DEVICE_MAINTAINER := KilluaZoldyck
 CHERISH_BUILD_TYPE := OFFICIAL
 
 # Boot Animation
